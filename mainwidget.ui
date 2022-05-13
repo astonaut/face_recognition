@@ -21,16 +21,42 @@
   <widget class="QComboBox" name="comboBox">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>90</y>
-     <width>301</width>
-     <height>61</height>
+     <x>420</x>
+     <y>30</y>
+     <width>231</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <pointsize>10</pointsize>
     </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>10</y>
+     <width>281</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>照片展示区</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>300</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>拍照</string>
    </property>
   </widget>
  </widget>

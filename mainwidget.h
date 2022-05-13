@@ -6,6 +6,10 @@
 #include <QCameraInfo>
 #include <QCameraViewfinder>
 #include <QCameraImageCapture>
+#include <QVBoxLayout>   //vertical 垂直盒子
+#include <QHBoxLayout>   //Horizontal 水平盒子
+#include <QTimer>
+#include <QNetworkAccessManager>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWidget; }
@@ -21,8 +25,10 @@ public:
 
 private:
     Ui::MainWidget *ui;
-    QCamera * camera;
-    QCameraViewfinder * finder;
-    QCameraImageCapture * imageCapture;
+    QCamera * camera;     //相机
+    QCameraViewfinder * finder; //取景器
+    QCameraImageCapture * imageCapture; //快门
+    QTimer * refreshTimer;
+    void TakePicture();
 };
 #endif // MAINWIDGET_H
